@@ -31,7 +31,7 @@ The initiative promotes reproducing published research circuits in **eSim** (ope
 
 The AD603 (Analog Devices) is a voltage-controlled VGA with:
 
-- Low input-referred noise (~1.3 nV/√Hz)
+- Low input-referred noise (~1.3 nV/sqrt(Hz))
 - Wide bandwidth (~90 MHz)
 - Linear-in-dB gain control
 
@@ -40,9 +40,9 @@ To achieve **80 dB total range (10,000×)**, two AD603 stages are cascaded.
 
 ### Operating concept
 
-- Input signal enters through **R1 = 100 Ω** into Stage 1 (U3)
+- Input signal enters through **R1 = 100 Ohm** into Stage 1 (U3)
 - Stage 1 output drives Stage 2 (U4)
-- Final output is taken from pin 7 of U4 through **C1 = 22 µF** to a **1 kΩ** load
+- Final output is taken from pin 7 of U4 through **C1 = 22 uF** to a **1 kOhm** load
 - A common control voltage **VC (0–2 V)** is applied to pin 1 of both AD603 ICs
 - Control sensitivity is **25 mV/dB** across the cascade
 
@@ -57,9 +57,9 @@ To achieve **80 dB total range (10,000×)**, two AD603 stages are cascaded.
 - ±9 V rails
 - 2.5 V reference
 - Feedback and gain partitioning with:
-  - **R3, R7 = 2.49 kΩ**
-  - **R8 = 5.1 kΩ (SET = 0.42)**
-  - **R9 = 6.2 kΩ (SET = 0.2906)**
+  - **R3, R7 = 2.49 kOhm**
+  - **R8 = 5.1 kOhm (SET = 0.42)**
+  - **R9 = 6.2 kOhm (SET = 0.2906)**
 
 ---
 
@@ -77,7 +77,7 @@ To achieve **80 dB total range (10,000×)**, two AD603 stages are cascaded.
 ### 1) Transient Analysis
 
 - Input: 1 mV, 1 kHz sine
-- Simulation: 0.1 s, max step 20 µs
+- Simulation: 0.1 s, max step 20 us
 - Expected output: amplified sine, about **3.28 V peak** (near default VC ≈ 1.85 V)
 
 ### 2) AC Sweep (Bode Plot)
